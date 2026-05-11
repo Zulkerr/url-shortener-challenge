@@ -1,0 +1,6 @@
+apiVersion: v2
+name: url-shortener
+description: Ein Helm Chart für den URL Shortener Service
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

@@ -1,0 +1,11 @@
+replicateCount: 1
+
+image:
+  repository: mein-docker-hub-name/url-shortener
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+
+service:
+  type: ClusterIP
+  port: 8080
