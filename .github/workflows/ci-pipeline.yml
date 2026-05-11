@@ -6,24 +6,24 @@ on:
   pull_request:
     branches: [ "main", "master" ]
 
-# Was soll die Pipeline tun?
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Den Code aus dem GitHub-Repository herunterladen
+      
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 2. Java auf dem Cloud-Server installieren
+      
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # 3. Das Projekt bauen und die Tests laufen lassen
+      
       - name: Build and Test with Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
